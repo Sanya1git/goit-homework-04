@@ -45,6 +45,9 @@ body {
 
  /*      header                        */
   .header {
+    box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 1px 6px rgba(46, 47, 66, 0.08); 
     border-bottom: 1px solid #e7e9fc;
 }
 .header-nav-address {
@@ -88,6 +91,7 @@ text-decoration: none;
 .header-menu-item{
     
 }
+
 .header-menu-link {
     display: block;
     padding-top:24px;
@@ -98,6 +102,23 @@ font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
 text-decoration: none;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+.current{
+    color:#404bbf;
+}
+.current::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    left: 0;
+    bottom: -1px;
+    margin-top: 20px;
+    border-radius: 2px;
+    background-color:  #404BBF;
 }
 .header-menu-link:hover{
     color: #404bbf  ;
@@ -122,6 +143,7 @@ font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
 text-decoration: none; 
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-cont-link:hover{
     color: #404bbf;
