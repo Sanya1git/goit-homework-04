@@ -407,9 +407,10 @@ letter-spacing: 0.02em;
 }
 .footer-list{
     display: flex;
+     align-items:baseline;
 }
 .footer-logo-info{
-    align-items:baseline;
+   
     margin-right: 120px;
 }
 
@@ -457,20 +458,32 @@ letter-spacing: 0.02em;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
 }
-.footer-icons{
+.footer-social-list{
     display: flex;
     gap: 16px;
     
+}
+.footer-social-icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 .footer-icon{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #4D5AE5;
-    width: 40px;
-    height: 40px;
     border-radius: 50%;
+    width: 100%;
+    height: 100%;
 }
+.footer-icon:hover{
+    background-color: #31d0aa;
+}
+.footer-icon:focus {
+    background-color: #31d0aa;
+}
+
 .footer-list-icon{
     fill:#f4f4fd;
 }
